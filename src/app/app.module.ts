@@ -4,11 +4,20 @@ import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { initializeKeycloak } from './init/keycloak-init.factory';
+import { initializeKeycloak } from './keycloak-init.factory';
+
+import { ShellComponent } from './views/shell/shell.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MainContentComponent } from './components/main-content/main-content.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShellComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainContentComponent,
   ],
   imports: [
     BrowserModule,
