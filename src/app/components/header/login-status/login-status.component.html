@@ -1,0 +1,8 @@
+<div *ngIf="userProfile;else anonymous">
+  <span class="pr-4">{{ displayName }}</span>
+  <button class="btn" type="button" (click)="logout()">Logout</button>
+</div>
+
+<ng-template #anonymous>
+  <button class="btn" type="button" (click)="login()">Login</button>
+</ng-template>

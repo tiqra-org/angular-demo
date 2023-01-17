@@ -1,0 +1,10 @@
+.nav {
+  li {
+    a {
+      @apply px-4 py-1 inline-block cursor-pointer rounded-full border-solid border-2 hover:border-teal-700 w-full text-center w-32;
+      &.active {
+        @apply border-teal-700 bg-teal-700 text-white;
+      }
+    }
+  }
+}

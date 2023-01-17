@@ -1,6 +1,6 @@
 import { KeycloakService } from "keycloak-angular";
 
-export function initializeKeycloak(
+export function useKeycloak(
   keycloak: KeycloakService
   ) {
     return () =>
@@ -12,7 +12,6 @@ export function initializeKeycloak(
         },
         initOptions: {
           checkLoginIframe: false,
-          onLoad: 'login-required',
         }
       });
 }
