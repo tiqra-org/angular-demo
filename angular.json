@@ -33,7 +33,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/@tiqra-org/receipt-scanner/dist/receipt-scanner.js"
             ]
           },
           "configurations": {
